@@ -1,0 +1,10 @@
+e:\Angular 5\AspNetAuthentication\bin\Debug\netcoreapp2.0\AspNetAuthentication.deps.json
+e:\Angular 5\AspNetAuthentication\bin\Debug\netcoreapp2.0\AspNetAuthentication.runtimeconfig.json
+e:\Angular 5\AspNetAuthentication\bin\Debug\netcoreapp2.0\AspNetAuthentication.runtimeconfig.dev.json
+e:\Angular 5\AspNetAuthentication\bin\Debug\netcoreapp2.0\AspNetAuthentication.dll
+e:\Angular 5\AspNetAuthentication\bin\Debug\netcoreapp2.0\AspNetAuthentication.pdb
+e:\Angular 5\AspNetAuthentication\obj\Debug\netcoreapp2.0\AspNetAuthentication.csproj.CoreCompileInputs.cache
+e:\Angular 5\AspNetAuthentication\obj\Debug\netcoreapp2.0\AspNetAuthentication.AssemblyInfoInputs.cache
+e:\Angular 5\AspNetAuthentication\obj\Debug\netcoreapp2.0\AspNetAuthentication.AssemblyInfo.cs
+e:\Angular 5\AspNetAuthentication\obj\Debug\netcoreapp2.0\AspNetAuthentication.dll
+e:\Angular 5\AspNetAuthentication\obj\Debug\netcoreapp2.0\AspNetAuthentication.pdb
