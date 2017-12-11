@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AspNetAuthentication.Models;
+using AspNetAuthentication.Repository;
+using AspNetAuthentication.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics;
@@ -58,6 +60,7 @@ namespace AspNetAuthentication {
                     .AllowAnyMethod ()
                     .AllowAnyHeader ();
             }));
+            services.AddScoped<IEmployee, EmployeeRepository> ();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
