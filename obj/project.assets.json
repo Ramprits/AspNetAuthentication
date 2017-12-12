@@ -12540,11 +12540,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\Angular 5\\AspNetAuthentication\\AspNetAuthentication.csproj",
+      "projectUniqueName": "E:\\Angular 5\\AspNetAuthentication\\AspNetAuthentication.csproj",
       "projectName": "AspNetAuthentication",
-      "projectPath": "e:\\Angular 5\\AspNetAuthentication\\AspNetAuthentication.csproj",
+      "projectPath": "E:\\Angular 5\\AspNetAuthentication\\AspNetAuthentication.csproj",
       "packagesPath": "C:\\Users\\RAMPRIT\\.nuget\\packages\\",
-      "outputPath": "e:\\Angular 5\\AspNetAuthentication\\obj\\",
+      "outputPath": "E:\\Angular 5\\AspNetAuthentication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

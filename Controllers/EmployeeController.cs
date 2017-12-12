@@ -26,11 +26,5 @@ namespace AspNetAuthentication.Controllers {
             return Ok (getEmployee);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Post ([FromBody] Employee employee) {
-            //TODO: Implement Realistic Implementation
-            await Task.Yield ();
-            return Created ("", null);
-        }
     }
 }
