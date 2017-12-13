@@ -2735,6 +2735,34 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
+      "NWebsec.AspNetCore.Core/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "1.0.2",
+          "NETStandard.Library": "1.6.1",
+          "System.Text.RegularExpressions": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/NWebsec.AspNetCore.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/NWebsec.AspNetCore.Core.dll": {}
+        }
+      },
+      "NWebsec.AspNetCore.Middleware/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "1.0.2",
+          "NETStandard.Library": "1.6.1",
+          "NWebsec.AspNetCore.Core": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/NWebsec.AspNetCore.Middleware.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/NWebsec.AspNetCore.Middleware.dll": {}
+        }
+      },
       "Remotion.Linq/2.1.1": {
         "type": "package",
         "dependencies": {
@@ -7556,6 +7584,32 @@
         "lib/netstandard1.3/Newtonsoft.Json.Bson.xml",
         "newtonsoft.json.bson.1.0.1.nupkg.sha512",
         "newtonsoft.json.bson.nuspec"
+      ]
+    },
+    "NWebsec.AspNetCore.Core/1.1.0": {
+      "sha512": "LKyL2tmHjc0w/OUWt5TlACNCjtbKL0HP/Wn9rKDkLPXgsCxfn273jisoxEbYa+PsnPjifSwrKE0zMcGmFPE7uQ==",
+      "type": "package",
+      "path": "nwebsec.aspnetcore.core/1.1.0",
+      "files": [
+        "lib/net451/NWebsec.AspNetCore.Core.dll",
+        "lib/net451/NWebsec.AspNetCore.Core.xml",
+        "lib/netstandard1.3/NWebsec.AspNetCore.Core.dll",
+        "lib/netstandard1.3/NWebsec.AspNetCore.Core.xml",
+        "nwebsec.aspnetcore.core.1.1.0.nupkg.sha512",
+        "nwebsec.aspnetcore.core.nuspec"
+      ]
+    },
+    "NWebsec.AspNetCore.Middleware/1.1.0": {
+      "sha512": "PlZ12p+ouSJXj5/6aFL26AI18VryK3+FH+sOgt7Cj+S5uUu1HdqD2FZXWts0P4Cf5gY8a2gzahV5KKY4VP0gug==",
+      "type": "package",
+      "path": "nwebsec.aspnetcore.middleware/1.1.0",
+      "files": [
+        "lib/net451/NWebsec.AspNetCore.Middleware.dll",
+        "lib/net451/NWebsec.AspNetCore.Middleware.xml",
+        "lib/netstandard1.3/NWebsec.AspNetCore.Middleware.dll",
+        "lib/netstandard1.3/NWebsec.AspNetCore.Middleware.xml",
+        "nwebsec.aspnetcore.middleware.1.1.0.nupkg.sha512",
+        "nwebsec.aspnetcore.middleware.nuspec"
       ]
     },
     "Remotion.Linq/2.1.1": {
@@ -12530,7 +12584,8 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.3",
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "NWebsec.AspNetCore.Middleware >= 1.1.0"
     ]
   },
   "packageFolders": {
@@ -12540,11 +12595,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Angular 5\\AspNetAuthentication\\AspNetAuthentication.csproj",
+      "projectUniqueName": "e:\\Angular 5\\AspNetAuthentication\\AspNetAuthentication.csproj",
       "projectName": "AspNetAuthentication",
-      "projectPath": "E:\\Angular 5\\AspNetAuthentication\\AspNetAuthentication.csproj",
+      "projectPath": "e:\\Angular 5\\AspNetAuthentication\\AspNetAuthentication.csproj",
       "packagesPath": "C:\\Users\\RAMPRIT\\.nuget\\packages\\",
-      "outputPath": "E:\\Angular 5\\AspNetAuthentication\\obj\\",
+      "outputPath": "e:\\Angular 5\\AspNetAuthentication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12582,6 +12637,10 @@
             "target": "Package",
             "version": "[2.0.0, )",
             "autoReferenced": true
+          },
+          "NWebsec.AspNetCore.Middleware": {
+            "target": "Package",
+            "version": "[1.1.0, )"
           }
         },
         "imports": [

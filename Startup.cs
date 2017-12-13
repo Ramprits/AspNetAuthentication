@@ -27,8 +27,6 @@ namespace AspNetAuthentication {
         }
 
         public IConfiguration Configuration { get; }
-
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices (IServiceCollection services) {
             services.AddDbContext<ApplicationDbContext> (options => {
                 options.UseSqlServer (Configuration.GetConnectionString ("ApplicationConnection"));
@@ -63,7 +61,6 @@ namespace AspNetAuthentication {
             services.AddScoped<IEmployee, EmployeeRepository> ();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure (IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory) {
             if (env.IsDevelopment ()) {
                 app.UseDeveloperExceptionPage ();
@@ -88,6 +85,11 @@ namespace AspNetAuthentication {
             }
             app.UseAuthentication ();
             app.UseCors ("Cors");
+            app.UseHsts (opt => {
+                opt.MaxAge (days: 180);
+                opt.IncludeSubdomains ();
+                opt.Preload ();
+            });
             app.UseMvc ();
         }
     }

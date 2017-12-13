@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "70b3bde655f1381cc2c47ce764bce5ef018ebe33"
+    "signature": "12a782454ab305f797aedbbc226567193f68e9af"
   },
   "compilationOptions": {
     "defines": [
@@ -24,7 +24,8 @@
       "AspNetAuthentication/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.3",
-          "Microsoft.NETCore.App": "2.0.0"
+          "Microsoft.NETCore.App": "2.0.0",
+          "NWebsec.AspNetCore.Middleware": "1.1.0"
         },
         "runtime": {
           "AspNetAuthentication.dll": {}
@@ -2363,6 +2364,32 @@
         },
         "compile": {
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
+        }
+      },
+      "NWebsec.AspNetCore.Core/1.1.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.0.1",
+          "NETStandard.Library": "2.0.0",
+          "System.Text.RegularExpressions": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/NWebsec.AspNetCore.Core.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/NWebsec.AspNetCore.Core.dll": {}
+        }
+      },
+      "NWebsec.AspNetCore.Middleware/1.1.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.0.1",
+          "NETStandard.Library": "2.0.0",
+          "NWebsec.AspNetCore.Core": "1.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/NWebsec.AspNetCore.Middleware.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/NWebsec.AspNetCore.Middleware.dll": {}
         }
       },
       "Remotion.Linq/2.1.1": {
@@ -5125,6 +5152,20 @@
       "sha512": "sha512-5PYT/IqQ+UK31AmZiSS102R6EsTo+LGTSI8bp7WAUqDKaF4wHXD8U9u4WxTI1vc64tYi++8p3dk3WWNqPFgldw==",
       "path": "newtonsoft.json.bson/1.0.1",
       "hashPath": "newtonsoft.json.bson.1.0.1.nupkg.sha512"
+    },
+    "NWebsec.AspNetCore.Core/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LKyL2tmHjc0w/OUWt5TlACNCjtbKL0HP/Wn9rKDkLPXgsCxfn273jisoxEbYa+PsnPjifSwrKE0zMcGmFPE7uQ==",
+      "path": "nwebsec.aspnetcore.core/1.1.0",
+      "hashPath": "nwebsec.aspnetcore.core.1.1.0.nupkg.sha512"
+    },
+    "NWebsec.AspNetCore.Middleware/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PlZ12p+ouSJXj5/6aFL26AI18VryK3+FH+sOgt7Cj+S5uUu1HdqD2FZXWts0P4Cf5gY8a2gzahV5KKY4VP0gug==",
+      "path": "nwebsec.aspnetcore.middleware/1.1.0",
+      "hashPath": "nwebsec.aspnetcore.middleware.1.1.0.nupkg.sha512"
     },
     "Remotion.Linq/2.1.1": {
       "type": "package",
